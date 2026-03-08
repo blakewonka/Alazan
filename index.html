@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home — Alazan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7"/>
+              <line x1="4" y1="12" x2="20" y2="12"/>
+              <line x1="4" y1="17" x2="20" y2="17"/>
+            </svg>
+          </button>
+          <nav class="nav-desktop">
+            <a href="/collections.html">Collections</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">About</a>
+          </nav>
+        </div>
+        <a href="/index.html" class="header-logo">ALAZAN</a>
+        <div class="header-right">
+          <a href="/search.html" class="search-text">Search</a>
+          <a href="/search.html" class="search-icon" aria-label="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="20" y1="20" x2="15.5" y2="15.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav>
+          <a href="/collections.html">Collections</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/about.html">About</a>
+          <a href="/search.html">Search</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Intro overlay: full-screen white with large ALAZAN, animates away on load -->
+    <div class="hero-intro" id="hero-intro" aria-hidden="true">
+      <span class="hero-intro-text" id="hero-intro-text">ALAZAN</span>
+    </div>
+
+    <!-- Hero: negative margin pulls it under header so sticky fills full 100vh -->
+    <section class="hero-wrapper" id="hero-wrapper">
+      <div class="hero-sticky">
+        <div class="hero-bg">
+          <img src="/src/assets/image-01.png" alt="" class="active" />
+          <img src="/src/assets/image-02.png" alt="" />
+          <img src="/src/assets/image-03.png" alt="" />
+          <img src="/src/assets/image-04.png" alt="" />
+          <img src="/src/assets/image-05.png" alt="" />
+          <div class="hero-overlay"></div>
+        </div>
+        <!-- Panel 1: title + scroll cue -->
+        <div class="hero-panel" id="hero-panel-1">
+          <p class="hero-title">ALAZAN</p>
+          <div class="hero-scroller">
+            <span class="hero-scroll-label">Scroll Down</span>
+            <div class="hero-scroll-line"></div>
+          </div>
+        </div>
+        <!-- Panel 2: founding text -->
+        <div class="hero-panel" id="hero-panel-2">
+          <p class="hero-body-text">Founded in Baku, Azerbaijan, ALAZAN is built on a rich legacy of craftsmanship and innovation. This dedication is reflected in the superior quality of our materials and every item we create.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Products section -->
+    <section class="products-section">
+
+      <!-- Bestsellers: 4 cards, layout changes per breakpoint -->
+      <div class="products-bestsellers">
+        <h2 class="products-title">CRAFTMANSHIP BESTSELLERS</h2>
+        <div class="products-bestsellers__grid">
+
+          <a class="product-card" href="/product.html">
+            <div class="product-card__image">
+              <img class="product-card__img" src="/src/assets/image-01.png" alt="Bestseller 1" />
+            </div>
+            <div class="product-card__label">
+              <span class="product-card__name">Product name</span>
+            </div>
+          </a>
+
+          <a class="product-card" href="/product.html">
+            <div class="product-card__image">
+              <img class="product-card__img" src="/src/assets/image-02.png" alt="Bestseller 2" />
+            </div>
+            <div class="product-card__label">
+              <span class="product-card__name">Product name</span>
+            </div>
+          </a>
+
+          <a class="product-card" href="/product.html">
+            <div class="product-card__image">
+              <img class="product-card__img" src="/src/assets/image-03.png" alt="Bestseller 3" />
+            </div>
+            <div class="product-card__label">
+              <span class="product-card__name">Product name</span>
+            </div>
+          </a>
+
+          <a class="product-card" href="/product.html">
+            <div class="product-card__image">
+              <img class="product-card__img" src="/src/assets/image-04.png" alt="Bestseller 4" />
+            </div>
+            <div class="product-card__label">
+              <span class="product-card__name">Product name</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Categories mosaic: desktop only -->
+      <div class="products-categories">
+        <div class="products-categories__header">
+          <p class="products-label">CATEGORIES</p>
+          <h2 class="products-title">FIND A MATCH FOR EVERY KIND OF JOURNEY</h2>
+        </div>
+        <div class="products-mosaic">
+
+          <a class="product-card products-mosaic__featured" href="/collections.html">
+            <div class="product-card__image">
+              <img class="product-card__img" src="/src/assets/image-05.png" alt="Category featured" />
+            </div>
+            <div class="product-card__label">
+              <span class="product-card__name">Product name</span>
+            </div>
+          </a>
+
+          <div class="products-mosaic__grid">
+            <a class="product-card" href="/collections.html">
+              <div class="product-card__image">
+                <img class="product-card__img" src="/src/assets/image-01.png" alt="Category 2" />
+              </div>
+              <div class="product-card__label">
+                <span class="product-card__name">Product name</span>
+              </div>
+            </a>
+            <a class="product-card" href="/collections.html">
+              <div class="product-card__image">
+                <img class="product-card__img" src="/src/assets/image-02.png" alt="Category 3" />
+              </div>
+              <div class="product-card__label">
+                <span class="product-card__name">Product name</span>
+              </div>
+            </a>
+            <a class="product-card" href="/collections.html">
+              <div class="product-card__image">
+                <img class="product-card__img" src="/src/assets/image-03.png" alt="Category 4" />
+              </div>
+              <div class="product-card__label">
+                <span class="product-card__name">Product name</span>
+              </div>
+            </a>
+            <a class="product-card" href="/collections.html">
+              <div class="product-card__image">
+                <img class="product-card__img" src="/src/assets/image-04.png" alt="Category 5" />
+              </div>
+              <div class="product-card__label">
+                <span class="product-card__name">Product name</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Value props -->
+      <div class="value-props">
+
+        <div class="value-prop">
+          <span class="value-prop__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M12 8l1.5 3 3.5.5-2.5 2.5.5 3.5L12 16l-3 1.5.5-3.5L7 11.5l3.5-.5z"/>
+            </svg>
+          </span>
+          <p class="value-prop__label">HIGHEST QUALITY</p>
+          <p class="value-prop__text">QUALITY AND QUANTITY OF PRODUCT ALWAYS ON HIGH LEVEL OF PRIORITY</p>
+        </div>
+
+        <div class="value-prop">
+          <span class="value-prop__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12l2 2 4-4"/>
+              <path d="M3 6h18M3 12h7M3 18h7"/>
+              <path d="M16 16l2 2 4-4"/>
+            </svg>
+          </span>
+          <p class="value-prop__label">PARTNERSHIP BENEFITS</p>
+          <p class="value-prop__text">B2B PARTNERSHIPS ARE PROFITABLE AND UNIQUE WITH SERVICE BY ALAZAN</p>
+        </div>
+
+        <div class="value-prop">
+          <span class="value-prop__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="1"/>
+              <path d="M16 8h4l3 5v3h-7V8z"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </span>
+          <p class="value-prop__label">WORLD WIDE DELIVERY</p>
+          <p class="value-prop__text">ANY ITEM CAN BE DELIVERED TO THE POINT OF INTEREST OF CONSUMER</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Video container -->
+    <section class="video-container">
+      <div class="video-container__bg">
+        <img class="video-container__img" src="/src/assets/image-03.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="video-container__overlay"></div>
+      <div class="video-container__text-frame">
+        <p class="video-container__title">MANUFACTURING THE QUALITY</p>
+      </div>
+    </section>
+
+    <!-- Showcase: IT MAY INTEREST YOU -->
+    <section class="showcase-interest">
+      <h2 class="showcase-interest__title">IT MAY INTEREST YOU</h2>
+      <div class="showcase-interest__grid">
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-01.png" alt="Product 1" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-02.png" alt="Product 2" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-03.png" alt="Product 3" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-04.png" alt="Product 4" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-05.png" alt="Product 5" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image">
+            <img class="product-card__img" src="/src/assets/image-01.png" alt="Product 6" />
+          </div>
+          <div class="product-card__label">
+            <span class="product-card__name">Product name</span>
+          </div>
+        </a>
+
+      </div>
+      <a href="/collections.html" class="showcase-interest__btn">View more</a>
+    </section>
+
+    <!-- B2B Partnership -->
+    <section class="b2b-section">
+      <div class="b2b-section__image">
+        <img src="/src/assets/image-04.png" alt="" aria-hidden="true" />
+        <div class="b2b-section__overlay"></div>
+      </div>
+      <div class="b2b-section__info">
+        <div class="b2b-section__heading">
+          <div class="b2b-section__title-box">
+            <p class="b2b-section__title">OPEN TO B2B PARTNERSHIP</p>
+          </div>
+          <p class="b2b-section__body">Alazan Textile Company is open to B2B partnerships worldwide, collaborating with retailers, distributors, manufacturers, and corporate clients seeking reliable textile production. We provide flexible cooperation, consistent quality, and scalable solutions to support partners from concept development to final delivery.</p>
+        </div>
+        <a href="/contact.html" class="b2b-section__btn">Contact us</a>
+      </div>
+      <div class="b2b-section__products">
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image"><img class="product-card__img" src="/src/assets/image-01.png" alt="Product 1" /></div>
+          <div class="product-card__label"><span class="product-card__name">Product name</span></div>
+        </a>
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image"><img class="product-card__img" src="/src/assets/image-02.png" alt="Product 2" /></div>
+          <div class="product-card__label"><span class="product-card__name">Product name</span></div>
+        </a>
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image"><img class="product-card__img" src="/src/assets/image-03.png" alt="Product 3" /></div>
+          <div class="product-card__label"><span class="product-card__name">Product name</span></div>
+        </a>
+        <a class="product-card" href="/collections.html">
+          <div class="product-card__image"><img class="product-card__img" src="/src/assets/image-05.png" alt="Product 4" /></div>
+          <div class="product-card__label"><span class="product-card__name">Product name</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="site-footer__col site-footer__col--brand">
+          <div class="site-footer__logo-block">
+            <span class="site-footer__logo">ALAZAN</span>
+            <span class="site-footer__logo-mark"></span>
+          </div>
+          <nav class="site-footer__nav">
+            <div class="site-footer__nav-row">
+              <a href="/">Home</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Collections</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Woman</a><span class="site-footer__sep">/</span>
+            </div>
+            <div class="site-footer__nav-row">
+              <a href="/collections.html">Man</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Kids</a><span class="site-footer__sep">/</span>
+              <a href="/about.html">About us</a>
+            </div>
+          </nav>
+        </div>
+        <div class="site-footer__col site-footer__col--contact">
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Contact us</p>
+            <a href="tel:+994507491381" class="site-footer__value">+994 50 749 13 81</a>
+          </div>
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Email</p>
+            <a href="mailto:info@alazan.com" class="site-footer__value">info@alazan.com</a>
+          </div>
+        </div>
+        <div class="site-footer__col site-footer__col--location">
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Address</p>
+            <p class="site-footer__value site-footer__value--address">Bakı ş. Səbail r. Q. Abbasov k. 32</p>
+          </div>
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Opening hours</p>
+            <p class="site-footer__value">9:00 - 18:00</p>
+          </div>
+        </div>
+        <div class="site-footer__col site-footer__col--meta">
+          <button class="site-footer__scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 16V1M6 1L1 6M6 1L11 6" stroke="#161616" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="site-footer__copyright">© 2026 - ALAZAN</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2026 - ALAZAN</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+/* =====================
+   IMAGE CARD — collection / feature card
+   Usage: width + height driven by parent grid cell
+   ===================== */
+
+.image-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+
+.image-card:active {
+  transform: scale(0.98);
+}
+
+/* ── Background layer ── */
+.image-card__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.image-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.image-card:hover .image-card__img {
+  transform: scale(1.05);
+}
+
+.image-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ── Content layer ── */
+.image-card__content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  color: rgba(255, 255, 255, 0.902);
+}
+
+.image-card__title {
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+}
+
+.image-card__body {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-card:hover .image-card__body {
+  opacity: 1;
+}
+
+.image-card__index {
+  font-family: var(--font-mono);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0;
+  margin-top: auto;
+}

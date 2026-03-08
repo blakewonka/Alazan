@@ -1,0 +1,111 @@
+:root {
+  /* =====================
+     RAW PALETTE
+  ===================== */
+
+  /* Neutral */
+  --neutral-100: #ffffff;
+  --neutral-200: #fafafb;
+  --neutral-300: #efeff0;
+  --neutral-400: #e3e3e5;
+  --neutral-500: #d3d3d5;
+  --neutral-600: #b1b2b4;
+  --neutral-700: #8d8e91;
+  --neutral-800: #6c6d70;
+  --neutral-900: #464749;
+  --neutral-1000: #28292a;
+  --neutral-1100: #1b1c1d;
+  --neutral-1200: #000000;
+
+  /* Alpha — Black */
+  --alpha-black-400: rgba(0, 0, 0, 0.122);   /* stroke-tertiary */
+  --alpha-black-700: rgba(0, 0, 0, 0.278);   /* glyphs-tertiary */
+  --alpha-black-1000: rgba(0, 0, 0, 0.639);  /* glyphs-secondary */
+  --alpha-black-1200: rgba(0, 0, 0, 0.902);  /* glyphs-primary */
+
+  /* Alpha — White */
+  --alpha-white-1200: rgba(255, 255, 255, 0.902); /* glyphs-inverse */
+
+  /* Blue */
+  --blue-600: #4c8eff;
+  --blue-700: #1d6add;
+  --blue-800: #005ac1;
+
+  /* Red */
+  --red-600: #ff5449;
+
+  /* Green */
+  --green-600: #29a64e;
+
+  /* Orange */
+  --orange-600: #dd7500;
+
+  /* =====================
+     SEMANTIC TOKENS
+  ===================== */
+
+  /* Backgrounds */
+  --color-bg: var(--neutral-100);
+  --color-surface: var(--neutral-200);
+  --color-surface-secondary: var(--neutral-300);
+
+  /* Glyphs (text / icons) */
+  --color-text: var(--alpha-black-1200);
+  --color-text-muted: var(--alpha-black-1000);
+  --color-text-subtle: var(--alpha-black-700);
+  --color-text-inverse: var(--alpha-white-1200);
+
+  /* Kept for style.css compat */
+  --color-primary: var(--neutral-1200);
+  --color-nav-active: var(--neutral-1200);
+  --color-accent: var(--blue-600);
+
+  /* Borders */
+  --color-border: var(--alpha-black-400);
+  --color-border-strong: var(--alpha-black-1200);
+
+  /* Semantic states */
+  --color-error: var(--red-600);
+  --color-success: var(--green-600);
+  --color-warning: var(--orange-600);
+  --color-info: var(--blue-600);
+
+  /* Header (dark surface) */
+  --color-header-bg: #161616;
+  --color-header-text: var(--alpha-white-1200);
+
+  /* =====================
+     TYPOGRAPHY — Geist Mono throughout
+  ===================== */
+
+  --font-sans: 'Geist Mono', monospace;
+  --font-mono: 'Geist Mono', monospace;
+
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px — H6 */
+  --font-size-2xl: 1.5rem;    /* 24px — H5 */
+  --font-size-4xl: 3.5rem;    /* 56px — H1 */
+
+  /* =====================
+     SPACING (4px base grid)
+  ===================== */
+
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-16: 4rem;
+
+  /* =====================
+     LAYOUT
+  ===================== */
+
+  --container-max: 1200px;
+  --header-height: 48px;
+
+  /* No rounding per design tokens */
+  --radius: 0px;
+  --border: 1px solid var(--color-border);
+}

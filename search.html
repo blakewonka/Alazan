@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search — Alazan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7"/>
+              <line x1="4" y1="12" x2="20" y2="12"/>
+              <line x1="4" y1="17" x2="20" y2="17"/>
+            </svg>
+          </button>
+          <nav class="nav-desktop">
+            <a href="/collections.html">Collections</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">About</a>
+          </nav>
+        </div>
+        <a href="/index.html" class="header-logo">ALAZAN</a>
+        <div class="header-right">
+          <a href="/search.html" class="search-text">Search</a>
+          <a href="/search.html" class="search-icon" aria-label="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="20" y1="20" x2="15.5" y2="15.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav>
+          <a href="/collections.html">Collections</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/about.html">About</a>
+          <a href="/search.html">Search</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Search</h1>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="site-footer__col site-footer__col--brand">
+          <div class="site-footer__logo-block">
+            <span class="site-footer__logo">ALAZAN</span>
+            <span class="site-footer__logo-mark"></span>
+          </div>
+          <nav class="site-footer__nav">
+            <div class="site-footer__nav-row">
+              <a href="/">Home</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Collections</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Woman</a><span class="site-footer__sep">/</span>
+            </div>
+            <div class="site-footer__nav-row">
+              <a href="/collections.html">Man</a><span class="site-footer__sep">/</span>
+              <a href="/collections.html">Kids</a><span class="site-footer__sep">/</span>
+              <a href="/about.html">About us</a>
+            </div>
+          </nav>
+        </div>
+        <div class="site-footer__col site-footer__col--contact">
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Contact us</p>
+            <a href="tel:+994507491381" class="site-footer__value">+994 50 749 13 81</a>
+          </div>
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Email</p>
+            <a href="mailto:info@alazan.com" class="site-footer__value">info@alazan.com</a>
+          </div>
+        </div>
+        <div class="site-footer__col site-footer__col--location">
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Address</p>
+            <p class="site-footer__value site-footer__value--address">Bakı ş. Səbail r. Q. Abbasov k. 32</p>
+          </div>
+          <div class="site-footer__info-block">
+            <p class="site-footer__label">Opening hours</p>
+            <p class="site-footer__value">9:00 - 18:00</p>
+          </div>
+        </div>
+        <div class="site-footer__col site-footer__col--meta">
+          <button class="site-footer__scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 16V1M6 1L1 6M6 1L11 6" stroke="#161616" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="site-footer__copyright">© 2026 - ALAZAN</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2026 - ALAZAN</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Card — Component Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="product-card.css" />
+  <style>
+    body { margin: 0; background: #f5f5f5; padding: 40px; font-family: 'Geist Mono', monospace; }
+    h2 { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin: 0 0 12px; }
+    .preview-section { margin-bottom: 56px; }
+
+    /* Sample grid to show fluid cards */
+    .grid-4col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 1100px; }
+    .grid-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 820px; }
+    .grid-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 540px; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Variant A: image only + name ── -->
+  <div class="preview-section">
+    <h2>Product Card — name only (4-col grid)</h2>
+    <div class="grid-4col">
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80" alt="Silk blouse" />
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Silk blouse</span>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&q=80" alt="Linen trousers" />
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Linen trousers</span>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400&q=80" alt="Cotton shirt" />
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Cotton shirt</span>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1467043237213-65f2da53396f?w=400&q=80" alt="Wool coat" />
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Wool coat</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ── Variant B: with favourite + price + cart ── -->
+  <div class="preview-section">
+    <h2>Product Card — with favourite, price &amp; cart (3-col grid)</h2>
+    <div class="grid-3col">
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80" alt="Silk blouse" />
+          <button class="product-card__fav" aria-label="Add to favourites" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Silk blouse</span>
+        </div>
+        <div class="product-card__price-row">
+          <div class="product-card__price">
+            <span class="product-card__price-val">89</span>
+            <span class="product-card__currency">₼</span>
+          </div>
+          <button class="product-card__cart" aria-label="Add to cart" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&q=80" alt="Linen trousers" />
+          <button class="product-card__fav" aria-label="Add to favourites" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Linen trousers</span>
+        </div>
+        <div class="product-card__price-row">
+          <div class="product-card__price">
+            <span class="product-card__price-val">120</span>
+            <span class="product-card__currency">₼</span>
+          </div>
+          <button class="product-card__cart" aria-label="Add to cart" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <img class="product-card__img" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400&q=80" alt="Cotton shirt" />
+          <button class="product-card__fav" aria-label="Add to favourites" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Cotton shirt</span>
+        </div>
+        <div class="product-card__price-row">
+          <div class="product-card__price">
+            <span class="product-card__price-val">55</span>
+            <span class="product-card__currency">₼</span>
+          </div>
+          <button class="product-card__cart" aria-label="Add to cart" onclick="event.preventDefault()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ── Variant C: no image (placeholder only) ── -->
+  <div class="preview-section">
+    <h2>Product Card — no image (placeholder, 2-col)</h2>
+    <div class="grid-2col">
+
+      <a class="product-card" href="#">
+        <div class="product-card__image">
+          <!-- no <img> → shows --neutral-300 background -->
+        </div>
+        <div class="product-card__label">
+          <span class="product-card__name">Product name</span>
+        </div>
+        <div class="product-card__price-row">
+          <div class="product-card__price">
+            <span class="product-card__price-val">15</span>
+            <span class="product-card__currency">₼</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="product-card" href="#">
+        <div class="product-card__image"></div>
+        <div class="product-card__label">
+          <span class="product-card__name">Product name</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>

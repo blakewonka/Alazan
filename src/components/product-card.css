@@ -1,0 +1,120 @@
+/* =====================
+   PRODUCT CARD — e-commerce product tile
+   Usage: width driven by parent grid column; height is content-driven
+   ===================== */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.product-card:active {
+  transform: scale(0.97);
+}
+
+/* ── Image area ── */
+.product-card__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--neutral-300, #efeff0);
+  overflow: hidden;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.product-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-card__img {
+  transform: scale(1.05);
+}
+
+/* Favourite (heart) button — top-right inside image */
+.product-card__fav {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.902);
+  padding: 8px;
+  transition: opacity 0.2s;
+}
+
+.product-card__fav:hover {
+  opacity: 0.55;
+}
+
+/* ── Label row ── */
+.product-card__label {
+  padding: 4px;
+}
+
+.product-card__name {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.902);
+}
+
+/* ── Price + cart row (optional) ── */
+.product-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+.product-card__price {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.product-card__price-val,
+.product-card__currency {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.902);
+}
+
+/* Cart button */
+.product-card__cart {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.902);
+  padding: 8px;
+  transition: opacity 0.2s;
+}
+
+.product-card__cart:hover {
+  opacity: 0.55;
+}
