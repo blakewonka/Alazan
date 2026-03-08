@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/explain-codebase-mmhwn5ljw0w1pc0z-9OkzM
   workflow_dispatch:
 
 permissions:
