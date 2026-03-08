@@ -8,27 +8,27 @@ import "../components/product-card.css";
 document.body.insertAdjacentHTML("beforeend", `
   <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
     <div class="nav-overlay-links">
-      <a href="/collections.html" class="nav-overlay-link" style="--i:0">
+      <a href="./collections.html" class="nav-overlay-link" style="--i:0">
         <span>Collections</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
-      <a href="/collections.html" class="nav-overlay-link" style="--i:1">
+      <a href="./collections.html" class="nav-overlay-link" style="--i:1">
         <span>Woman</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
-      <a href="/collections.html" class="nav-overlay-link" style="--i:2">
+      <a href="./collections.html" class="nav-overlay-link" style="--i:2">
         <span>Man</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
-      <a href="/collections.html" class="nav-overlay-link" style="--i:3">
+      <a href="./collections.html" class="nav-overlay-link" style="--i:3">
         <span>Kids</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
-      <a href="/about.html" class="nav-overlay-link" style="--i:4">
+      <a href="./about.html" class="nav-overlay-link" style="--i:4">
         <span>About</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
-      <a href="/contact.html" class="nav-overlay-link" style="--i:5">
+      <a href="./contact.html" class="nav-overlay-link" style="--i:5">
         <span>Contact</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
